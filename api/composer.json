@@ -1,0 +1,6 @@
+{
+    "require": {
+        "catfan/medoo": "^1.7",
+        "voku/anti-xss": "^4.1"
+    }
+}

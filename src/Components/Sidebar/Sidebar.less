@@ -1,0 +1,33 @@
+.Sidebar {
+  width: 100%;
+  max-width: 300px;
+}
+
+.Sidebar__item {
+  margin: 0 0 10px 0;
+}
+
+.Sidebar__img {
+  display: block;
+  width: 100%;
+}
+
+.Sidebar__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  &.active {
+    background: var(--btn-primary-text-color);
+    color: var(--btn-primary-bg-color);
+  }
+}
+
+
+@media (max-width: 1021px) {
+  .Sidebar {
+    display: none;
+  }
+}

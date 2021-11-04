@@ -1,0 +1,24 @@
+.Preloader {
+  position: relative;
+}
+
+.Preloader__img {
+  display: block;
+  width: 120px;
+  animation: spin .9s infinite;
+}
+
+.Preloader__text {
+  margin: 10px 0 0 0;
+  text-align: center;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate3d(0, 1, 0, 1turn);
+  }
+
+  to {
+    transform: rotate3d(0, 1, 0, 0);
+  }
+}

@@ -1,0 +1,53 @@
+.Notice {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  z-index: 20;
+}
+
+.Notice__item {
+  position: relative;
+  border: 1px solid var(--btn-primary-bg-color);
+  background: rgba(0, 0, 0, 0.8);
+  margin: 0 0 10px 0;
+  padding: 10px 30px 10px 10px;
+  font-size: 22px;
+  animation: show 1s;
+
+  &--error {
+    color: var(--error-color);
+  }
+
+  &--success {
+    color: var(--success-color);
+  }
+}
+
+.Notice__close-block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.Notice__close {
+  width: 10px;
+  height: 10px;
+}
+
+@keyframes show {
+
+  from {
+    transform: translateX(150%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}

@@ -1,0 +1,49 @@
+.platform-Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+  height: 40px;
+  border: none;
+  padding: 0;
+  background: var(--btn-primary-bg-color);
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 24px;
+  color: var(--btn-primary-text-color);
+  outline: none;
+  cursor: pointer;
+  transition: var(--transition-time);
+
+  &:hover {
+    background: var(--btn-primary-text-color);
+    color: var(--btn-primary-bg-color);
+  }
+
+  &--ghost {
+    background: var(--disabled-bg-color);
+    color: var(--text-color);
+
+    &:hover {
+      background: var(--text-color);
+      color: var(--bg--color);
+    }
+  }
+
+  &--small {
+    max-width: 140px;
+    height: 25px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .platform-Button {
+    font-size: 20px;
+
+    &--small {
+      font-size: 16px;
+    }
+
+  }
+}

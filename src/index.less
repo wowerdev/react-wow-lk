@@ -1,0 +1,76 @@
+:root {
+  --text-color: #fff;
+  --bg--color: #222;
+  --btn-primary-bg-color: #6c2300;
+  --btn-primary-text-color: #da9803;
+  --disabled-bg-color: #9b9b9b;
+  --accent-text-color: var(--btn-primary-text-color);
+  --npc-green-color: #00fa00;
+
+  --warrior--color: #c79c6e;
+  --paladin--color: #f58cba;
+  --rogue--color: #fff569;
+  --priest--color: #fff;
+  --dk--color: #c41f3b;
+  --shaman--color: #0070de;
+  --mage--color: #69ccf0;
+  --warlock--color: #9482c9;
+  --druid--color: #ff7d0a;
+  --hunter--color: #abd473;
+
+  --error-color: #ff1616;
+  --success-color: #29d932;
+
+  --transition-time: .15s;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg--color) url('./assets/img/bg.png') 50% 50% no-repeat;
+  background-size: cover;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#root {
+  min-height: 100%;
+  height: 100%;
+}
